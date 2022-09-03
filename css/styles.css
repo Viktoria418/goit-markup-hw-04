@@ -83,10 +83,15 @@ body {
 
 .team-item {
 	background-color: var(--background-color-header);
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	/* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
 	border-radius: 0px 0px 4px 4px;
 	border-top: none;
 	
+}
+.team-item:hover,
+.team-item:focus {
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 .team-speciality {
@@ -181,9 +186,7 @@ body {
 .fon {
 	margin-right: 50px;
 }
-.contacts :last-child {
-	margin-right: 0;
-}
+
 
 .contacts .link {
 	display: flex;
@@ -192,13 +195,18 @@ body {
 	fill: currentColor;
 }
 
-.mail-icon,
-.tel-icon {
-	/* fill: currentColor; */
-}
+
 
 .contacts-item {
 	margin-right: 30px;
+}
+.contacts-item:last-child {
+	margin-right: 0;
+}
+.mail-icon,
+.tel-icon {
+	/* fill: currentColor; */
+	margin-right: 10px;
 }
 
 /* ---------------HERO------------ */
@@ -235,7 +243,7 @@ body {
 }
 
 .section {
-	padding-top: 0;
+	padding-top: 94px;
 	padding-bottom: 94px;
 }
 .about-main {
@@ -316,35 +324,39 @@ body {
 .section-our-clients {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center;	
   gap: 30px;
-}
+  }
 .clients {
   fill: currentColor;
 }
 .clients-link {
 	color: #AFB1B8;
-	border: 1px solid #AFB1B8;
-	border-radius: 4px;
-	display:block;
+	
+	/* display:block; */
 }
 .clients-link:hover,
 .clients-link:focus {
-	color: var(--color-accent);
-	border-color:var(--color-accent);
+color: var(--color-accent);
+border-color:var(--color-accent);
 }
 
 
 
 .clients-company {
 	display: flex;
-	align-items: center ;
+	align-items: center;
 	justify-content: center;
-	width: 170px;
-	height: 92px;
-	
-	
+	/* align-items: baseline; */
 	fill: #AFB1B8;
+	width: 170px;
+	height: 92px;   
+	border: 1px solid #AFB1B8;
+	border-radius: 4px;
+}
+.clients-company:hover,
+.clients-company:focus {
+border-color:var(--color-accent);	
 }
 
 
@@ -354,12 +366,24 @@ body {
 	padding-bottom: 60px;
 	padding-top: 60px;
 	align-items: baseline;
-	display: flex;
-	padding-left: 215px;
-	padding-right: 878px;
+	display: flex; 
+	
 }
-
-
+.footer-div {
+	/* margin-left: 250px; */
+	margin-right: 70px;
+	padding-top: 60px;
+}
+.ftr {
+	/* display: flex;
+	align-items: center; */
+	/* justify-content: center; */
+	/* padding-bottom: 60px;
+	padding-top: 60px; */
+	align-items: baseline;
+	display: flex;
+	
+}
 .social-footer {
 	display: flex;
 	/* justify-content: center; */
@@ -494,8 +518,8 @@ gap: 30px;
 }
 /* --------PORTFOLIO-------- */
 
-.page-products .portf-pic:hover,
-.page-products .portf-pic:focus{
+ .portf-pic:hover,
+ .portf-pic:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
